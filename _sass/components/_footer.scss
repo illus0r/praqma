@@ -1,0 +1,18 @@
+footer{
+  background: $color-gray;
+  color: $color-gray-text;
+  padding: 2em 0px;
+  .directions{
+    @extend .row;
+  }
+  .direction{
+    @extend .col-md-2;
+  }
+  .title{
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  .addition{
+    margin-top: 1em;
+  }
+}
