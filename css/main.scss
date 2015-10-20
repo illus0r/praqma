@@ -12,3 +12,5 @@ $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 /* any style customization must be before the bootstrap import */
 @import "variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "components/jumbotron";
+@import "components/thumbnails";
