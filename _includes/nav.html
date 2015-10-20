@@ -1,7 +1,6 @@
-{% for p in site.pages %}
+{% assign pages = site.pages | sort: "nav-weight" %}
+{% for p in pages %}
   {% if p.title %}
-    <a href=" {{ p.url }}">
-      {{ p.title }}
-    </a>
+    <a href=" {{ p.url }}">{{ p.title }}</a>
   {% endif %}
 {% endfor %}
