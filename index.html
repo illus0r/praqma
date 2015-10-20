@@ -1,28 +1,9 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="front">
-  {% assign jt = site.data.front.jumbotron[0] %}
-  {{ jt.ribbon-orange-caption }}
-  {{ jt.ribbon-black-caption }}
-  <img src="{{ jt.image | prepend: site.url }}" alt="{{ ribbon-black-caption }}">
-  {{ jt.ribbon-white-caption }}
-  <div class="row">
-    {% for pb in site.data.front.page-banners %}
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <a href="{{ pb.link | prepend: site.url }}">
-            <img src="{{ pb.image | prepend: site.url }}" alt="{{ pb.header }}">
-          </a>
-          <div class="caption">
-            <h3>{{ pb.header }}</h3>
-            <p>
-              {{ pb.caption }}
-            </p>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+  {% include main-banner.html %}
+  {% include page-banners.html %}
 </div>

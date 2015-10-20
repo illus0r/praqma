@@ -1,5 +1,5 @@
-jumbotron:
- - image:  /images/jumbotron-mastering-git.png
+main-banners:
+ - image:  /images/main-banner-mastering-git.png
    link:    /training/git.html
    caption: This text should appear over the right half of the picture
             when the mouse hover over it. It should contain a twitter 

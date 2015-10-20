@@ -1,0 +1,26 @@
+// empty
+.main-banner{
+  a{
+    color: $color-white;
+  }
+  h2{
+    background-color: $color-orange;
+    display: inline-block;
+    &:after {
+        content: '\00000a';
+        white-space: pre;
+    }
+  }
+  h1{
+    background-color: $color-black;
+    display: inline-block;
+    &:before {
+        content: '\A';
+        white-space: pre;
+    }
+    /*float: left;*/
+  }
+  .additional-link{
+    color: $color-orange;
+  }
+}

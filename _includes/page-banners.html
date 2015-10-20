@@ -1,0 +1,17 @@
+<div class="row">
+  {% for pb in site.data.front.page-banners %}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="{{ pb.link | prepend: site.url }}">
+          <img src="{{ pb.image | prepend: site.url }}" alt="{{ pb.header }}">
+        </a>
+        <div class="caption">
+          <h3>{{ pb.header }}</h3>
+          <p>
+            {{ pb.caption }}
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
