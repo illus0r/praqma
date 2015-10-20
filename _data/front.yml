@@ -1,37 +1,37 @@
-toprow:
- - image:           /images/some-pic.png
-   link:        /training/git.html
-   caption:       This text should appear over the right half of the picture
-                  when the mouse hover over it. It should contain a twitter 
-                  size (140 chars) text. 
-   ribbon-orange-text: 2 DAYS COURSE
-   ribbon-black-text: MASTERING<br/>GIT
-   ribbon-white-text: VIEW ALL COURSES    
-   ribbon-white-link: /training/
+jumbotron:
+ - image:   /images/some-pic.png
+   link:    /training/git.html
+   caption: This text should appear over the right half of the picture
+            when the mouse hover over it. It should contain a twitter 
+            size (140 chars) text. 
+   ribbon-orange-caption: 2 DAYS COURSE
+   ribbon-black-caption:  MASTERING<br/>GIT
+   ribbon-white-caption:  VIEW ALL COURSES    
+   ribbon-white-link:     /training/
 
-bottomrow:
- - image:           /images/some-other-pic.png      
-   target:        http://www.code-conf.com
+page-banners:
+ - image:         /images/some-other-pic.png      
+   link:          http://www.code-conf.com
    header:        SAMPLE
    caption:       This text should appear under the picture and stay visible
                   even on small screens. The text is expected to be roughly 
                   the length of a tweet. 
 
- - image:           /images/another-pic.png
-   target:        /news/some-page.html
+ - image:         /images/another-pic.png
+   link:          /news/some-page.html
    header:        NEWS
    caption:       Learn how Microsoft avoided “not invented here” syndrome and
                   adopted Git. Ethomson speaks at code-conf.
 
- - image:           /images/another-pic.png
-   target:        /news/some-page.html
+ - image:         /images/another-pic.png
+   link:          /news/some-page.html
    header:        FEATURES
    caption:       Our services, ranging from development of plain vanilla
                   software, over software verification and continuous delivery
                   assessment.
 
- - image:           /images/yet-another-pic.png
-   target:        http://www.code-conf.com
+ - image:         /images/yet-another-pic.png
+   link:          http://www.code-conf.com
    header:        CONFERENCE
    caption:       Our event are relevant to managers, software architects
                   developers, project managers, agile coaches and everyone 

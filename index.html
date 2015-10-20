@@ -3,26 +3,22 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for br in site.data.front.bottomrow %}
-      <li>
-        {{ br.image }}
-      </li>
+  <div class="row">
+    {% for pb in site.data.front.page-banners %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a href=" {{ pb.link | prepend: site.url }}">
+            <img src="{{ pb.image }}" alt="{{ pb.header }}">
+          </a>
+          <div class="caption">
+            <h3>{{ pb.header }}</h3>
+            <p>
+              {{ pb.caption }}
+            </p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
     {% endfor %}
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
 </div>
