@@ -1,6 +1,7 @@
 footer{
   background: $color-gray;
   color: $color-gray-text;
+  /*font-size: 0.8em;*/
   padding: 2em 0px;
   .directions{
     @extend .row;

@@ -1,17 +1,18 @@
 {% assign mb = site.data.front.main-banners[0] %}
 <section class="main-banner">
   <div>
-    <a class="main-link" href="{{ mb.link }}">
-      <span>
-        <h2>{{ mb.ribbon-orange-caption }}</h2><br><h1>{{ mb.ribbon-black-caption }}</h1>
-        <span class="caption">{{ mb.caption }}</span>
-      </span>
-      <img src="{{ mb.image | prepend: site.url }}" alt="{{ ribbon-black-caption }}">
-    </a>
-    <a class="additional-link" href=" {{ mb.ribbon-white-link }}">
-      <span>
+    <div>
+      <a class="main-link" href="{{ mb.link }}">
+        <span class="title-ribbons">
+          <span class="ribbon-secondary">{{ mb.ribbon-orange-caption }}</span><br>
+          <span class="ribbon-primary">{{ mb.ribbon-black-caption }}</span>
+        </span>
+        <img src="{{ mb.image | prepend: site.url }}" alt="{{ ribbon-black-caption }}">
+      </a>
+      <span class="caption">{{ mb.caption }}</span>
+      <a class="additional-link" href=" {{ mb.ribbon-white-link }}">
         {{ mb.ribbon-white-caption }}
-      </span>
-    </a>
+      </a>
+    </div>
   </div>
 </section>
