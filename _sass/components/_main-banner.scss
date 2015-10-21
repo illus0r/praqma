@@ -1,11 +1,32 @@
 // empty
-.main-banner{
+section.main-banner{
+  margin-bottom: 2em;
+  position: relative;
   a{
     color: $color-white;
+  }
+  &>div{
+    @extend .col-md-15;
+  }
+  a.main-link>span{
+    position: absolute;
+    top: 2em;
+  }
+  img{
+    width: 100%;
+  }
+  a.additional-link span{
+    background: $color-white;
+    bottom: 0;
+    right: 0;
+    color: $color-orange;
+    display: block;
+    position: absolute;
   }
   h2{
     background-color: $color-orange;
     display: inline-block;
+    margin: 0;
     @include font($family: 'condensed', $weight: 'bold');
     /*&:after {*/
         /*content: '\00000a';*/
@@ -15,13 +36,12 @@
   h1{
     background-color: $color-black;
     display: inline-block;
+    margin: 0;
     @include font($family: 'condensed', $weight: 'bold');
     /*&:before {*/
         /*content: '\A';*/
         /*white-space: pre;*/
     /*}*/
   }
-  .additional-link{
-    color: $color-orange;
-  }
+  @extend .row;
 }
